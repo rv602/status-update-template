@@ -10,7 +10,7 @@
    },
    "browser_action": {
       "default_icon": "icons/browser_action_icon.png",
-      "default_title": "Gmail plugin for SalesHandy"
+      "default_title": "Chrome extension for amFOSS status update"
    },
    "content_scripts": [
       {
@@ -75,9 +75,9 @@
          "run_at": "document_end"
       }
    ],
-   "content_security_policy": "script-src 'self' https://*.saleshandy.com/*; object-src 'self'",
+   "content_security_policy": "script-src 'self' object-src 'self'",
    "default_locale": "en",
-   "description": "100% free email tracking without any hidden signatures, logos or gimmicks.",
+   "description": "Chrome extension for amFOSS status update",
    "icons": {
       "128": "icons/128x128.png",
       "16": "icons/16x16.png",
@@ -87,7 +87,7 @@
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvlpitM5NAteE9XQZjcZEFPOyPm3JETNDM1x2wRumfNwjoLJRSUL2f7KFuXoAZsFCsKAm0Ns2162jBJXzmjV3tEUd1SYbM83r1YZWiq4t/HdWiqQWiycitTTOXreJIuMBnWnZSO1cTXoYW9V4JGFwhHV1W46UWokqfSUewNfvwfyTQsk1DrKKits+Fl0/5uoo/lnPceF1xjCZ8Vy9l6DK9k2LvO71Ne846j6lS1KGtFSpht50Ps2gQvJo11qtQ0pV/eSTX9LH4nDegF0RdnbixPXRzNW4p7tqv3tm796GTj9lfeMoBqwwaE18oqpFBT1VL5zFZzsC6onYl9zzR7slpwIDAQAB",
    "manifest_version": 2,
-   "name": "Free Email Tracker by Saleshandy",
+   "name": "Chrome extension for amFOSS status update",
    "permissions": [
       "https://mail.google.com/",
       "https://inbox.google.com/",
