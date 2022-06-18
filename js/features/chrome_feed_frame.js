@@ -24,51 +24,51 @@ shFeedsModal = null;
 /**
  * Handles logic to open new Chrome-Feed, Gets invoked when user clicks on Feed Icon. 
  */
-function onChromeFeedIconClick() {
-  if (shFeedsModal && !shFeedsModal.destroyed) {
-    return;    
-  }
-  let ChromeFeedPopOutBody = getNewElement();
-  let title = '';
-  let modalOptions = {
-    title: title,
-    el: ChromeFeedPopOutBody,
-  };
-  shFeedsModal = sdkMain.Widgets.showModalView(modalOptions);
+// function onChromeFeedIconClick() {
+//   if (shFeedsModal && !shFeedsModal.destroyed) {
+//     return;    
+//   }
+//   let ChromeFeedPopOutBody = getNewElement();
+//   let title = '';
+//   let modalOptions = {
+//     title: title,
+//     el: ChromeFeedPopOutBody,
+//   };
+//   shFeedsModal = sdkMain.Widgets.showModalView(modalOptions);
 
-  let SHModalContainer = shFeedsModal._modalViewDriver._modalContainerElement;
-  let modalBtnContainer = SHModalContainer.querySelector('.inboxsdk__modal_buttons');
-  let modalTopRow = SHModalContainer.querySelector('.inboxsdk__modal_toprow');
-  let modalContentContainer = SHModalContainer.querySelector('.inboxsdk__modal_content');
-  let modalContainer = SHModalContainer.querySelector('.inboxsdk__modal_container');
-  let closeBtnContainer = SHModalContainer.querySelector('.inboxsdk__modal_close');
+//   let SHModalContainer = shFeedsModal._modalViewDriver._modalContainerElement;
+//   let modalBtnContainer = SHModalContainer.querySelector('.inboxsdk__modal_buttons');
+//   let modalTopRow = SHModalContainer.querySelector('.inboxsdk__modal_toprow');
+//   let modalContentContainer = SHModalContainer.querySelector('.inboxsdk__modal_content');
+//   let modalContainer = SHModalContainer.querySelector('.inboxsdk__modal_container');
+//   let closeBtnContainer = SHModalContainer.querySelector('.inboxsdk__modal_close');
 
-  SHModalContainer.classList.add('chrome-feed-fullscreen-container');
-  modalContainer.classList.add('chrome-feeds-container');
-  modalContentContainer.classList.add('chrome-feeds-modal-container');
-  modalTopRow.classList.add('chrome-feed-modal-header');
-  modalBtnContainer.classList.add('chrome-feed-modal-footer');
-  closeBtnContainer.classList.add('chrome-feed-close-btn');
-  closeBtnContainer.setAttribute('data-tooltip', 'Close feeds');
+//   SHModalContainer.classList.add('chrome-feed-fullscreen-container');
+//   modalContainer.classList.add('chrome-feeds-container');
+//   modalContentContainer.classList.add('chrome-feeds-modal-container');
+//   modalTopRow.classList.add('chrome-feed-modal-header');
+//   modalBtnContainer.classList.add('chrome-feed-modal-footer');
+//   closeBtnContainer.classList.add('chrome-feed-close-btn');
+//   closeBtnContainer.setAttribute('data-tooltip', 'Close feeds');
 
-  let { auth_token } = getUserInfoFromLocal();
+//   let { auth_token } = getUserInfoFromLocal();
 
-  let feedIndexUrl = `${selectedFeedEndpoint}/feeds?token=${auth_token}`;
-  modalContentContainer.innerHTML = `<iframe class='chrome-feeds-frame' src="${feedIndexUrl}"></iframe>`;
-  modalContentContainer.style.visibility = 'hidden';
-  SHModalContainer.style.visibility = 'hidden';
-  const modalOverlay = document.getElementsByClassName('inboxsdk__modal_overlay');
-  if (modalOverlay) {
-    modalOverlay[0].style.visibility = 'hidden';
-  }
+//   let feedIndexUrl = `${selectedFeedEndpoint}/feeds?token=${auth_token}`;
+//   modalContentContainer.innerHTML = `<iframe class='chrome-feeds-frame' src="${feedIndexUrl}"></iframe>`;
+//   modalContentContainer.style.visibility = 'hidden';
+//   SHModalContainer.style.visibility = 'hidden';
+//   const modalOverlay = document.getElementsByClassName('inboxsdk__modal_overlay');
+//   if (modalOverlay) {
+//     modalOverlay[0].style.visibility = 'hidden';
+//   }
 
-  setTimeout(() => {
-    modalOverlay[0].style.visibility = 'visible';
-    modalContentContainer.style.visibility = 'visible';
-    SHModalContainer.style.visibility = 'visible';
-  }, 200);
-  modalContainer.classList.add('chrome-feeds-container');
-}
+//   setTimeout(() => {
+//     modalOverlay[0].style.visibility = 'visible';
+//     modalContentContainer.style.visibility = 'visible';
+//     SHModalContainer.style.visibility = 'visible';
+//   }, 200);
+//   modalContainer.classList.add('chrome-feeds-container');
+// }
 
 /**
  * Closes New chrome feed modal.

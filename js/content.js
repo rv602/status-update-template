@@ -797,11 +797,11 @@ InboxSDK.load(2, SH_APP_ID).then(function(sdk) {
     }
 
     function getToolbarButtonDescriptorForFeeds(canShowNewFeed) {
-        const iconName = canShowNewFeed ? 'NewFeed.png' : 'feed.png'
+        // const iconName = canShowNewFeed ? 'NewFeed.png' : 'feed.png'
         return {
-            title: 'Feeds',
+            title: '',
             titleClass: 'sh_menubar_option sh_feeds_button',
-            iconUrl: chrome.extension.getURL(`images/${iconName}`),
+            // iconUrl: chrome.extension.getURL(`images/${iconName}`),
             iconClass: 'sh_toolbar_feed_icon',
             onClick: function(event) {
                 event.dropdown.close();
@@ -1361,8 +1361,8 @@ InboxSDK.load(2, SH_APP_ID).then(function(sdk) {
             setTimeout(() => {
                 let activateIconWrapper = document.querySelector('.sh_toolbar_pref_button').parentElement.parentElement;
                 activateIconWrapper.setAttribute('data-tooltip', 'Activate');
-                activateIconWrapper.style.setProperty('margin-right', '0px', 'important');
-                attachStyleToInputBtn(activateIconWrapper);
+                // activateIconWrapper.style.setProperty('margin-right', '0px', 'important');
+                // attachStyleToInputBtn(activateIconWrapper);
             }, 100);
         }
     }
@@ -2006,34 +2006,34 @@ InboxSDK.load(2, SH_APP_ID).then(function(sdk) {
                 let modalContentContainer = trackingTimeContainer.querySelector('.inboxsdk__modal_content');
                 let modalTopRowContainer = trackingTimeContainer.querySelector('.inboxsdk__modal_toprow');
 
-                if (usingNewGmail) {
-                    modalBtnContainer.style.setProperty('display', 'block', 'important');
-                    modalTopRowContainer.style.setProperty('padding', '3px 24px 3px 24px', 'important');
-                    closeBtnContainer.style.setProperty('margin', '11px 12px 16px 12px', 'important');
-                } else {
-                    closeBtnContainer.style.setProperty('margin', '11px 0px 16px 0px', 'important');
-                }
+                // if (usingNewGmail) {
+                //     modalBtnContainer.style.setProperty('display', 'block', 'important');
+                //     modalTopRowContainer.style.setProperty('padding', '3px 24px 3px 24px', 'important');
+                //     closeBtnContainer.style.setProperty('margin', '11px 12px 16px 12px', 'important');
+                // } else {
+                //     closeBtnContainer.style.setProperty('margin', '11px 0px 16px 0px', 'important');
+                // }
 
-                modalContentContainer.style.setProperty('margin-bottom', '3px', 'important');
+                // modalContentContainer.style.setProperty('margin-bottom', '3px', 'important');
 
                 [...modalBtnContainer.children].forEach(child => {
-                    if (child.textContent == 'Retry') {
-                        child.style.setProperty('background', '#005ebf', 'important');
-                        child.style.setProperty('color', 'white', 'important');
-                        child.style.setProperty('margin-left', '0px', 'important');
-                    } else {
-                        child.style.setProperty('border', '1px solid grey', 'important');
-                    }
-                    child.style.setProperty('margin-right', '10px', 'important');
+                    // if (child.textContent == 'Retry') {
+                    //     child.style.setProperty('background', '#005ebf', 'important');
+                    //     child.style.setProperty('color', 'white', 'important');
+                    //     child.style.setProperty('margin-left', '0px', 'important');
+                    // } else {
+                    //     child.style.setProperty('border', '1px solid grey', 'important');
+                    // }
+                    // child.style.setProperty('margin-right', '10px', 'important');
                 });
 
-                modalContainer.style.width = '400px';
-                modalContainer.style.height = usingNewGmail ? '165px' : '125px';
-                if (!usingNewGmail) {
-                    modalContainer.style.setProperty('padding', '14px 30px 24px 30px', 'important');
-                } else {
-                    modalContainer.style.paddingTop = '14px';
-                }
+                // modalContainer.style.width = '400px';
+                // modalContainer.style.height = usingNewGmail ? '165px' : '125px';
+                // if (!usingNewGmail) {
+                //     modalContainer.style.setProperty('padding', '14px 30px 24px 30px', 'important');
+                // } else {
+                //     modalContainer.style.paddingTop = '14px';
+                // }
 
                 trackingTimeModalView.on('destroy', () => {
                     if (!_.has(trackingTimeModalView, 'buttonClicked')) {
@@ -5160,22 +5160,22 @@ function onError(error, composeView) {
             modalContainer.classList.add('ErrorMainContainer');
             closeBtnContainer.setAttribute('data-tooltip', 'Close');
 
-            modalBtnContainer.style.setProperty('display', 'block', 'important');
-            modalTopRow.style.setProperty('margin-top', '16px');
+            // modalBtnContainer.style.setProperty('display', 'block', 'important');
+            // modalTopRow.style.setProperty('margin-top', '16px');
 
             [...modalBtnContainer.children].forEach(child => {
-                child.style.setProperty('margin-left', '0', 'important');
-                child.style.setProperty('background', '#005ebf', 'important');
-                child.style.setProperty('color', 'white', 'important');
+                // child.style.setProperty('margin-left', '0', 'important');
+                // child.style.setProperty('background', '#005ebf', 'important');
+                // child.style.setProperty('color', 'white', 'important');
             });
 
             if (error.error_code === 2242 || error.error_code === 2401 || error.error_code === 2904) {
                 [...modalBtnContainer.children].forEach(child => {
-                    child.style.setProperty('margin-left', '0', 'important');
-                    child.style.setProperty('margin-right', '10px', 'important');
-                    child.style.setProperty('background', '#005ebf', 'important');
-                    child.style.setProperty('color', 'white', 'important');
-                    child.style.setProperty('border', '1px solid grey', 'important');
+                    // child.style.setProperty('margin-left', '0', 'important');
+                    // child.style.setProperty('margin-right', '10px', 'important');
+                    // child.style.setProperty('background', '#005ebf', 'important');
+                    // child.style.setProperty('color', 'white', 'important');
+                    // child.style.setProperty('border', '1px solid grey', 'important');
                 });
             }
         }
@@ -5414,12 +5414,12 @@ function cleanLocalForInactiveUserInfo() {
 }
 
 function attachStyleToInputBtn(btn) {
-    btn.style.padding = '2px';
-    btn.style.borderRadius = '2px';
-    btn.style.border = '1px solid #9a9191';
-    btn.style.background = 'white';
+    // btn.style.padding = '2px';
+    // btn.style.borderRadius = '2px';
+    // btn.style.border = '1px solid #9a9191';
+    // btn.style.background = 'transperent';
     if (usingNewGmail) {
-        btn.style.setProperty('margin-right', '0px', 'important');
+        // btn.style.setProperty('margin-right', '0px', 'important');
     }
 }
 
