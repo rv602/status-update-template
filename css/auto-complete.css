@@ -1,0 +1,182 @@
+.autocomplete-suggestions {
+    text-align: left;
+    cursor: default;
+    background: #fff;
+    position: absolute;
+    display: none;
+    z-index: 9999;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    bottom: 192px;
+    height: 355px;
+    margin-bottom: 0px;
+    max-height: 355px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+}
+
+.autocomplete-suggestion {
+    cursor: pointer;
+    margin-bottom: 8px;
+    position: relative;
+    padding: 0 0.6em;
+    line-height: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.02em;
+    color: #333;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border: 0px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+}
+
+.autocomplete-suggestion b {
+    font-weight: normal;
+    color: #1f8dd6;
+}
+
+.autocomplete-suggestion.highlighted {
+    background: #f2f2f2;
+}
+
+.autocomplete-suggestion.selected {
+    background: #eeeeee;
+}
+
+.autocomplete-suggestion.selected .zoneName {
+    color: #1a73e8;
+}
+
+.timezone-category {
+    color: #4d90fe;
+    background: transparent;
+    font-weight: 500;
+    padding: 0px 8px 11px;
+}
+
+.title .timezone-category:first-child {
+    padding-top: 11px;
+}
+
+.title .autocomplete-suggestion h2 {
+    display: none;
+}
+
+/* .title .autocomplete-suggestion:first-child{padding-top: 40px;} */
+
+.gmtName {
+    color: #bababa;
+    font-size: 12px;
+    float: left;
+}
+
+.zoneLocalName {
+    color: #bababa;
+    font-size: 12px;
+    float: left;
+    margin-right: 2px;
+}
+
+.zoneTime {
+    float: right;
+    font-size: 12px;
+    color: #bababa;
+}
+
+.zoneDetails {
+    float: left;
+    width: 100%;
+}
+
+.autocomplete-close {
+    display: block;
+    cursor: default;
+    position: absolute;
+    z-index: 9999;
+    box-sizing: border-box;
+    height: 37px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: #202124;
+    font-size: 13px;
+    bottom: 302px;
+    width: inherit;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+}
+
+.autocomplete-backdrop {
+    display: block;
+    cursor: default;
+    position: absolute;
+    z-index: 9999;
+    box-sizing: border-box;
+    min-height: 392px;
+    margin-bottom: 0px;
+    text-align: center;
+    border: 0px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #202124;
+    font-size: 13px;
+    padding: 150px 10px;
+    width: inherit;
+    font-size: 13px;
+    background: #fff;
+    bottom: -53px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 6px 10px 2px, rgba(0, 0, 0, 0.12) 2px -3px 8px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+}
+
+.auto-complete-container {
+    position: absolute;
+    background: #fff;
+    display: none;
+    width: 255px;
+}
+
+.sidebar-autocomplete-tz {
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 6px 10px 2px, rgba(0, 0, 0, 0.12) 2px -3px 8px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+}
+
+.autocomplete-close h4 {
+    margin: 0;
+    display: inline-block;
+    color: #666a73;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.autocomplete-close a {
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    right: 2px;
+    padding: 9px 0;
+    display: inline-block;
+    text-align: center;
+    top: 2px;
+    border-radius: 100%;
+}
+
+.autocomplete-close a img {
+    opacity: 0.54;
+}
+
+.autocomplete-close a:hover {
+    background: rgb(238, 238, 238);
+}
+
+.autocomplete-close a:hover img {
+    opacity: 1;
+}
+
+.autocomplete-close a img {
+    width: 12px;
+}

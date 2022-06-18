@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'sh-chromeIco';
+    src: url('chrome-extension://__MSG_@@extension_id__/css/font/sh-chromeIco/sh-chromeIco.eot');
+    src: url('chrome-extension://__MSG_@@extension_id__/css/font/sh-chromeIco/sh-chromeIco.eot?') format('embedded-opentype'),
+        url('chrome-extension://__MSG_@@extension_id__/css/font/sh-chromeIco/sh-chromeIco.ttf') format('truetype'),
+        url('chrome-extension://__MSG_@@extension_id__/css/font/sh-chromeIco/sh-chromeIco.woff') format('woff'),
+        url('chrome-extension://__MSG_@@extension_id__/css/font/sh-chromeIco/sh-chromeIco.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.note-resizebar {
+    display: none;
+}
+
+.note-align.active,
+.note-list.active,
+.note-table.active,
+.note-color.active,
+.note-current-color-button.active,
+.link-dialog.active,
+.note-current-color-button.active,
+.dropdown-style.active,
+.note-btn-bold.active,
+.note-btn-italic.active,
+.note-btn-underline.active,
+.note-btn-strikethrough.active,
+.note-btn-superscript.active,
+.note-btn-subscript.active,
+.dropdown-fontname.active,
+.dropdown-fontsize.active,
+.note-align.active,
+.note-list.active,
+.dropdown-line-height.active,
+.note-table.active,
+.btn-fullscreen.active,
+.btn-codeview.active,
+.sn-checkbox-open-in-new-window.active,
+.link-dialog.active,
+.note-link-popover.active,
+.note-image-popover.active,
+.note-table-popover.active,
+.note-air-popover.active,
+.note-hint-popover.active {
+    background-color: rgba(32, 33, 36, 0.122);
+    opacity: 1;
+}
+
+.note-btn-group > .note-btn,
+.note-btn-group > .note-btn-group {
+    margin-left: 0px;
+}
+
+.note-btn.note-current-color-button {
+    padding: 0px !important;
+}
+
+.note-btn-group.note-color.note-color-all .dropdown-toggle {
+    padding: 0 !important;
+    height: 27px !important;
+}
+
+i.note-icon-font.note-recent-color {
+    padding: 5px;
+}
+
+.note-btn-group.note-fontsize,
+.note-btn-group.note-color,
+.note-btn-group.note-style,
+.note-btn-group.note-para,
+.note-btn-group.note-insert {
+    border-right: 1px solid #d9d9d9;
+}
+
+.note-btn-group.note-color.note-color-all {
+    border-right: none;
+}
+
+.note-icon-table::before {
+    content: '\e917';
+}
+
+.note-icon-align-left::before {
+    content: '\e900';
+}
+
+.note-icon-unorderedlist::before {
+    content: '\e908';
+}
+
+.note-icon-underline::before {
+    content: '\e90a';
+}
+
+.note-icon-text-height::before {
+    content: '\e907';
+}
+
+.note-icon-picture::before {
+    content: '\e90f';
+}
+
+.note-icon-question::before {
+    content: '\e90d';
+}
+
+.note-icon-minus::before {
+    content: '\e911';
+}
+
+.note-icon-orderedlist::before {
+    content: '\e909';
+}
+
+.note-icon-italic::before {
+    content: '\e906';
+}
+
+.note-icon-link::before {
+    content: '\e90e';
+}
+
+.note-icon-font::before {
+    content: '\e904';
+}
+
+.note-icon-eraser::before {
+    content: '\e903';
+}
+
+.note-icon-float-left::before {
+    content: '\e900';
+}
+
+.note-icon-code::before {
+    content: '\e901';
+}
+
+.note-icon-bold:before {
+    content: '\e902' !important;
+}
+
+.note-icon-arrows-alt:before {
+    content: '\e90b';
+}
+
+.note-icon-caret::before {
+    content: '\e905';
+}
+
+.note-icon-align-center::before {
+    content: '\e912';
+}
+
+.note-icon-align-indent::before {
+    content: '\e916';
+}
+
+.note-icon-align-justify::before {
+    content: '\e913';
+}
+
+.note-icon-align-outdent::before {
+    content: '\e915';
+}
+
+.note-icon-align-right::before {
+    content: '\e914';
+}
+
+.note-icon-insert-document::before {
+    content: '\e918';
+}
+
+.note-icon-insert-template::before {
+    content: '\e919';
+}
+
+.note-icon-table::before,
+.note-icon-align-left::before,
+.note-icon-unorderedlist::before,
+.note-icon-underline::before,
+.note-icon-text-height::before,
+.note-icon-picture::before,
+.note-icon-question::before,
+.note-icon-minus::before,
+.note-icon-orderedlist::before,
+.note-icon-italic::before,
+.note-icon-link::before,
+.note-icon-font::before,
+.note-icon-eraser::before,
+.note-icon-float-left::before,
+.note-icon-code::before,
+.note-icon-bold:before,
+.note-icon-arrows-alt:before,
+.note-icon-caret::before,
+.note-icon-align-center::before,
+.note-icon-align-indent::before,
+.note-icon-align-justify::before,
+.note-icon-align-outdent::before,
+.note-icon-align-right::before,
+.note-icon-insert-document::before,
+.note-icon-insert-template::before {
+    font-family: 'sh-chromeIco' !important;
+    font-size: 18px;
+}
+
+.note-btn.btn-fullscreen.active > .note-icon-arrows-alt::before {
+    content: '\e90c';
+}
+
+button.note-color-reset.btn.btn-light::before,
+button.note-color-reset.btn.btn-light::before,
+button.note-color-select.btn::before,
+button.note-btn.note-btn-primary.note-imageAttributes-btn:before {
+    display: none;
+}
+
+button.note-color-reset.btn.btn-light,
+button.note-color-reset.btn.btn-light,
+button.note-color-select.btn {
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.note-editor.note-frame {
+    border: none;
+}
+
+.note-modal-body kbd {
+    font-size: 12px;
+    font-weight: 400 !important;
+    font-family: Roboto;
+    background-color: rgba(48, 56, 67, 1);
+}
+.note-editor.note-frame .note-statusbar {
+    border-top: 1px solid rgb(236, 239, 241);
+}
+
+.note-editable {
+    font-family: sans-serif, 'Trebuchet', 'Verdana', 'Roboto', 'Comic Sans MS', 'Courier New', 'Georgia', 'Helvetica', 'Lucida',
+        'RobotoDraft', 'Tahoma', 'Arial Black', 'Arial', 'Times';
+    font-size: 13px;
+}
+
+.note-current-fontsize {
+    font-size: 13px;
+}
+
+.note-editor .note-editing-area p {
+    margin: 0;
+}
+
+.note-editor.note-frame .note-editing-area {
+    background: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.note-modal-content {
+    width: 670px;
+    border-radius: 4px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.note-modal-body span {
+    cursor: default;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    height: 19px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    padding: 6px 5px 2px 5px;
+}
+
+.note-editor.note-frame.fullscreen {
+    position: absolute;
+}
+
+.note-modal-body {
+    max-height: 60vh;
+    overflow: auto;
+}
+
+input.note-imageAttributes-width.form-control.note-form-control.note-input,
+input.note-imageAttributes-height.form-control.note-form-control.note-input {
+    width: 25%;
+    display: inline-block;
+}
+
+.form-group.note-form-group.note-group-select-from-files {
+    display: none;
+}
+
+.note-modal-footer .note-btn {
+    color: #fff;
+    background-color: #1a73e8;
+    align-items: center;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    outline: none;
+    position: relative;
+    z-index: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 500;
+    height: 36px;
+}
+
+.tab-pane.note-tab-pane {
+    margin: 10px;
+}
+
+.in:hover {
+    text-decoration: none !important;
+}
+
+.ShareTemplateBody {
+    height: 100%;
+    overflow: auto;
+    padding: 22px 37px;
+    max-height: calc(88vh - 283px);
+    overflow-y: auto;
+}
+
+.note-tooltip-content {
+    max-width: 250px;
+}
+
+.Kj-JD-Jz .e,
+.Kj-JD-Jz a {
+    color: inherit !important;
+}
+
+.note-modal-title {
+    font-size: 20px;
+}
+
+.note-modal-header {
+    padding: 14px 20px;
+}
+
+.note-toolbar {
+    border-bottom: none !important;
+}
+
+.note-popover .note-popover-content > .note-btn-group,
+.note-toolbar > .note-btn-group {
+    margin-left: -7px;
+}
+
+.note-popover .note-popover-content .note-dropdown-menu,
+.note-toolbar .note-dropdown-menu {
+    min-width: 180px;
+}
+
+span.note-current-fontname {
+    max-width: 63px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: bottom;
+}

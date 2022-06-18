@@ -1,0 +1,50 @@
+.chrome-feeds-frame {
+  height: 85.7vh;
+  width: 85vw;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chrome-feeds-container {
+  height: 85.7vh !important;
+  width: 85vw !important;
+  margin: 0 !important;
+  overflow: unset !important;
+}
+.chrome-feed-fullscreen-container {
+  padding: 0 !important;
+}
+@media (max-width: 1024px) and (max-height: 768px) {
+  .chrome-feeds-frame {
+    height: 90vh;
+    width: 95vw;
+  }
+
+  .chrome-feeds-container {
+    height: 90vh !important;
+    width: 95vw !important;
+  }
+}
+.chrome-feeds-modal-container {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+.chrome-feed-modal-header {
+  padding: 0 !important;
+}
+.chrome-feed-modal-footer {
+  display: none !important;
+}
+.item {
+  display: block;
+  padding: 25px;
+  color: darkblue;
+  background: darkseagreen;
+  margin: 25px auto;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.display-none {
+  display: none !important;
+}
